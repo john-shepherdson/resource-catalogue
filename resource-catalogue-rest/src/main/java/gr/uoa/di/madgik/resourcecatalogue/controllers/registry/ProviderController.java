@@ -60,7 +60,7 @@ public class ProviderController {
     @Value("${catalogue.name:Resource Catalogue}")
     private String catalogueName;
 
-    @Value("${pid.providers.prefix}")
+    @Value("${prefix.providers}")
     private String pidPrefix;
 
     ProviderController(ProviderService providerService,

@@ -37,13 +37,13 @@ public class DataParser {
     private HttpHeaders headers;
     private final EventService eventService;
 
-    @Value("${matomoHost:localhost}")
+    @Value("${matomo.host:localhost}")
     private String matomoHost;
 
-    @Value("${matomoToken:}")
+    @Value("${matomo.token:}")
     private String matomoToken;
 
-    @Value("${matomoSiteId:1}")
+    @Value("${matomo.site-id:1}")
     private String matomoSiteId;
 
     DataParser(EventService eventService) {

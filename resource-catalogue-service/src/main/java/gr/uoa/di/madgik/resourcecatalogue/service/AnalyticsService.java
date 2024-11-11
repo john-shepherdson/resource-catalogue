@@ -35,16 +35,16 @@ public class AnalyticsService implements Analytics {
     private RestTemplate restTemplate;
     private HttpHeaders headers;
 
-    @Value("${matomoHost:localhost}")
+    @Value("${matomo.host:localhost}")
     private String matomoHost;
 
-    @Value("${matomoToken:}")
+    @Value("${matomo.token:}")
     private String matomoToken;
 
-    @Value("${matomoSiteId:1}")
+    @Value("${matomo.site-id:1}")
     private String matomoSiteId;
 
-    @Value("${matomoAuthorizationHeader:}")
+    @Value("${matomo.authorization.header:}")
     private String authorizationHeader;
 
     @Autowired

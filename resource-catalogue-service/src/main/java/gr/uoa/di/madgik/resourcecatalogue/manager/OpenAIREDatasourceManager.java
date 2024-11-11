@@ -34,7 +34,7 @@ public class OpenAIREDatasourceManager implements OpenAIREDatasourceService {
     private final String openaireMetricsValidated;
     private final String openaireMetrics;
 
-    public OpenAIREDatasourceManager(@Value("${openaire.dsm.api}") String openaireAPI,
+    public OpenAIREDatasourceManager(@Value("${openaire.ds.api}") String openaireAPI,
                                      @Value("${openaire.ds.metrics.validated}") String openaireMetricsValidated,
                                      @Value("${openaire.ds.metrics}") String openaireMetrics) {
         this.openaireAPI = openaireAPI;
